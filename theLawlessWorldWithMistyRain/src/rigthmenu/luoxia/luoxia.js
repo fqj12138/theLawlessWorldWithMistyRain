@@ -5,28 +5,28 @@ module.exports = {
         let x = Math.random() * 10;
         let y = Math.random() * 10;
         let menu = require("/rigthmenu/xitongshezhi");
-        // toast("采集阴阳花");
-        // clickPoint(335 + x, 316 + y);
-        // sleep(130000 / speed);
-        // clickPoint(671 + x, 684 + y);
-        // sleep(80000 / speed);
-        // clickPoint(990 + x, 523 + y);
-        // sleep(500);
-        // clickPoint(1100 + x, 581 + y);
-        // sleep(1500);
-        // clickPoint(1100 + x, 581 + y);
-        // sleep(1500);
-        // clickPoint(1100 + x, 581 + y);
-        // sleep(1000);
-        // let flower = readResAutoImage("flower.png");
-        // var p1 = image.findImageEx(flower, 0, 0, 0, 0, 0.5, 0.6, 1, 5);
-        // if (p1 != null) {
-        //     clickRandomRect(p1[0]);
-        //     image.recycle(p1);
-        //     clickPoint(906 + x, 271 + y);
-        //     menu.clickImage("find-flower.png");
-        //     sleep(5000);
-        // }
+        toast("采集阴阳花");
+        clickPoint(335 + x, 316 + y);
+        sleep(130000 / speed);
+        clickPoint(671 + x, 684 + y);
+        sleep(80000 / speed);
+        clickPoint(990 + x, 523 + y);
+        sleep(500);
+        clickPoint(1100 + x, 581 + y);
+        sleep(1500);
+        clickPoint(1100 + x, 581 + y);
+        sleep(1500);
+        clickPoint(1100 + x, 581 + y);
+        sleep(1000);
+        let flower = readResAutoImage("flower.png");
+        var p1 = image.findImageEx(flower, 0, 0, 0, 0, 0.5, 0.6, 1, 5);
+        if (p1 != null) {
+            clickRandomRect(p1[0]);
+            image.recycle(p1);
+            clickPoint(906 + x, 271 + y);
+            menu.clickImage("find-flower.png");
+            sleep(5000);
+        }
         toast("采集松树");
         clickPoint(990 + x, 523 + y);
         sleep(500);

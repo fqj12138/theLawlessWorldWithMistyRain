@@ -92,14 +92,7 @@ module.exports = {
         clickPoint(434 + x, 568 + y);
         sleep(120000 / speed);
         if (true) {
-            let tempImg = readResAutoImage("cow.png");
-            let points = image.findImageEx(tempImg, 0, 0, 0, 0, 0.6, 0.8, 1, 5);
-            if (points) {
-                menu.clickImage("cow.png");
-                clickPoint(930 + x, 284 + y);
-                sleep(500);
-                menu.clickImage("killcow.png");
-            }
+            menu.killCow();
         }
         sleep(500);
         clickPoint(1644 + x, 205 + y);

@@ -35,5 +35,21 @@ module.exports = {
         }
         image.recycle(tempImg);
         clickPoint(Math.floor(Math.random() * 50), Math.floor(Math.random() * 50));
+    },
+    killCow: () => {
+        let cow = readResAutoImage("cow.png");
+        let points = image.findImageEx(cow, 0, 0, 0, 0, 0.6, 0.8, 1, 5);
+        if (points) {
+            clickRandomRect(points[0]);
+            image.recycle(points);
+
+            clickPoint(930 + x, 284 + y);
+            sleep(500);
+
+            var killCow = readResAutoImage("killCow.png");
+            var killCowImage = image.findImageEx(killCow, 0, 0, 0, 0, 0.6, 0.8, 1, 5);
+            clickRandomRect(killCowImage[0]);
+            image.recycle(killCowImage);
+        }
     }
 }
